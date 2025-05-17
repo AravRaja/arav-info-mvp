@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import SVGPortrait from './SVGPortrait'
+
 import OrbitNav from './OrbitNav'
 
 export default function Hero() {
@@ -118,7 +118,6 @@ export default function Hero() {
           animate={booted ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 1.2, duration: 1 }}
         >
-          <SVGPortrait draw={booted} />
         </motion.div>
       {/* Color indicator bottom left */}
       <div className="fixed bottom-4 left-4 z-50 flex flex-col items-start gap-2">
